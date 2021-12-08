@@ -1,0 +1,452 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&family=Source+Sans+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+}
+/* --------------------------HEADER SECTION---------------------------- */
+#body-header{
+   
+    height:65vh;
+    background-image:linear-gradient(to right,rgba(0,0,0,0.8),rgba(0,0,0,0.3)),url('ss2.jpg');
+    /* background-image:linear-gradient() url(ss2.jpg); */
+    background-size:100% 100%;
+     background-position:center; 
+    background-attachment: fixed;
+}
+.menu{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+.nav{
+    width:100%;
+    text-align: center;
+}
+.nav li{
+    display:inline-block;
+    margin:8px;
+   font-size: 16px;
+    
+}
+.nav li a{
+    color:white;
+    text-decoration:none;
+    transition:color 0.5s;
+}
+.nav li a:hover{
+    color: grey;
+    border-bottom:1px solid white;
+}
+.logos li{
+    display:inline-block;
+    margin:8px;
+   font-size: 16px;
+}
+.logos li a{
+    color:white;
+    text-decoration:none;
+    transition:color 0.5s;
+}
+.logos li a:hover{
+    color: grey;
+    border-bottom:1px solid white;
+}
+.name{
+    margin-top: 20vh;
+}
+.myname{
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight:700;
+    font-family: sans-serif;
+    /* margin-bottom: 10px; */
+}
+
+
+/* -----------------------ABOUT SECTION---------------------------- */
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+    margin-bottom: 10vh;
+}
+#about p{
+    font-size: 1.5rem;
+    line-height:1.5em;
+    margin: auto;
+    margin-top: 5vh;
+   
+    width:70%;
+    text-align: justify;
+}
+#myimg{
+    height:12rem;
+    width:12rem;
+    margin: auto;
+    margin-top: -14vh;
+   
+}
+#myimg img{
+    height: 100%;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 50%;
+
+    
+}
+#myimg img:hover{
+    box-shadow: 0px 0px 8px lightblue;
+}
+
+
+/*-------------------------- Skills section-------------------------- */
+.skills-display{
+    display: flex;
+    width: 70vw;
+    height: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: space-around;
+    margin-bottom: 20px;
+    
+}
+.skill-progress{
+    width:8rem;
+    height:1.4rem;
+    border-radius: 0.7rem;
+    background-color: lightgray;
+    margin-bottom: 10px;
+    /* padding: 10px; */
+    /* position: relative; */
+}
+.skill-progress>div{
+    height: 1.4rem;
+    padding-left: 3px;
+    /* padding-top:5px; */
+    border-radius:20px 0px 0px 20px ;
+}
+.skill-name{
+    margin-left: 10px;
+    color: white;
+    font-size: 15px;
+}
+.eighty-percent{
+    
+    width: 80%;
+    background-color: #00bfff;
+}
+.seventy-percent{
+    
+    width: 70%;
+    background-color: #7b68ee;
+}
+.sixty-percent{
+    
+    width: 60%;
+    background-color: #fa5252;
+}
+
+
+/* -------------------EDUCATION-------------------------- */
+#education{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.timeline{
+   position: relative;
+    width:75%;
+    /* border: 2px solid blue; */
+}
+.timeline-box{
+    /* background-color: #e7f5ff; */
+    position: relative;
+    margin: 5px;
+    padding: 10px;
+    width:40%;
+    left: 5%;
+    min-height: 150px;
+    /* border: 2px solid blue; */
+}
+.timeline-box:nth-child(2n){
+    left: 52%;
+}
+.timeline-box:nth-child(2n+1)::after{
+    position: absolute;
+    content:'';
+    border-radius: 50%;
+    top:30%;
+    right:-13%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #3F69AA;
+    z-index: 1;
+}
+.timeline-box:nth-child(2n)::after{
+    position: absolute;
+    content:'';
+    border-radius: 50%;
+    top:30%;
+    left:-6.5%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #3F69AA;
+    z-index: 1;
+}
+.subhead{
+    margin-right: 10px;
+    margin: 10px;
+    color:#3F69AA;
+    font-size: 20px;
+    text-align: right;
+}
+.cname{
+   margin-right: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color:#ffb90f;
+    text-align: right;
+}
+.timeline-divider{
+    position:absolute;
+    width:0;
+    height: 80%;
+    border:2px dashed #81a1c1;
+    top: 10%;
+    left: 50%;
+}
+.timline-traveller{
+    color: #3F69AA;
+    position:sticky;
+    top:30%;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+
+/*--------------------------- Portfolio-------------------- */
+.container{
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 7rem;
+}
+.card
+{   
+    width:30vw;
+    height: 35vh;
+    /* border-radius: 50%; */
+    position: relative;
+    overflow: hidden;
+    /* overflow: hidden; */
+    /* background-image: url(calc.jpg);
+    background-size: 100% 100%; */
+}
+.card img{
+    /* width:30vw;
+    height: 40vh; */
+    width: 100%;
+    height: 100%;
+}
+
+.card:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.3));
+}
+
+
+/*----------------------- Contact section------------------- */
+#contact{
+    background: linear-gradient(to top right, #1164B4 0%, #9932cc 100%);
+    color:#e6e6fa;
+    
+}
+.cntus{
+    display: flex;
+    
+}
+.message{
+    width:50%;
+}
+.in{
+padding: 10px;
+}
+
+.message input{
+    width:100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    padding: 10px;
+    background-color: transparent;
+    font-size: 16px;
+    color:#e6e6fa;
+}
+.message textarea{
+    border:none;
+    outline: none;
+    max-width: 100%;
+    border-bottom: 2px solid white;
+    padding: 10px;
+    background-color: transparent;
+    font-size: 16px;
+    color:#e6e6fa;
+}
+.message #msg{
+    margin-left: 20%;
+}
+
+.btn{
+    width:50%;
+    margin: auto;
+    padding:20px;
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 16px;
+    font-weight: bold;
+    color:#e6e6fa;
+}
+.btn:hover{
+    background-color:#e6e6fa;
+    color:blueviolet;
+}
+.info{
+    margin-left: 3rem;
+    width: 35%;
+    
+}
+.info p{
+    font-size:16px;
+    
+}
+.descp{
+    padding: 10px;
+}
+.descp h4{
+    font-size: 20px;
+}
+.descp p{
+    margin-top: 10px;
+}
+.descp p i{
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+/* ------GENERAL------- */
+.heading{
+    font-family: 'STIX Two Math', serif;
+    color: #2857a4;
+    font-size: 3rem;
+    padding:20px 0px 30px 0px;
+    margin-bottom: 12px;
+   
+}
+.text-center{
+    text-align: center;
+}
+.social-icons li a {
+    padding:10px;
+    border-radius: 50%;
+    font-size: 1rem;
+
+}
+.social-icons li a:hover{
+    box-shadow: 0px 0px 6px lightblue;
+}
+
+@media screen and (max-width:600px){
+    #body-header{
+        height: 40vh;
+    }
+    .timeline-divider{
+        left:7%;
+        top:6%;
+        /* height: 8%; */
+    }
+    .timeline-box{
+        left:12% !important;
+        width:80%;
+        background-color: transparent;
+    }
+    .timeline-box::after{
+        left: -8.5% !important;
+    }
+    .name{
+        margin-top: 8vh;
+    }
+    .subhead{
+        
+        text-align: center;
+    }
+    .cname{
+        text-align: center;
+    }
+    .cntus{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .message{
+        width: 90%;
+    }
+    .message #msg{
+        margin: auto;
+    }
+    .heading{
+        font-size: 2.5rem;
+    }
+    .info{
+        margin: auto;
+        width: 90%;
+    }
+    .info p{
+        font-size: 14px;
+        text-align: justify;
+    }
+    
+    .nav{
+       
+        background-color: #080706;
+        /* position: fixed; */
+        transition:0.5s;
+        width:0;
+        height: 0;
+        overflow: hidden;
+        z-index: 1;
+        text-align:left ;
+    }
+    .nav li{
+        display: block;
+        margin: 10px;
+    }
+    .menu{
+        width: 100%; 
+        height: 8vh;
+        color:white;
+        padding: 10px;
+        size: 14px;
+    }
+    .nvv{
+        background-color:#080706;
+        position: fixed;
+        top:0;
+        width:100%;
+        z-index: 3;
+       
+    }
+}
+@media screen and (min-width:600px){
+    .nav{
+        width: 100% !important;
+    }
+}
